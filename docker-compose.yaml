@@ -1,0 +1,7 @@
+services:
+  fastapi-docs:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      network: host
+    network_mode: host
