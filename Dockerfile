@@ -8,4 +8,4 @@ RUN git clone https://github.com/fastapi/fastapi.git && \
     pip install -r requirements-docs.txt
 WORKDIR /app/fastapi/docs/en
 
-CMD ["mkdocs", "serve", "--no-livereload"]
+CMD ["mkdocs", "serve", "--no-livereload", "--dev-addr", "0.0.0.0:8000"]
